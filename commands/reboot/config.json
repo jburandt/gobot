@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "elogs",
+    "Command": "python -u ./commands/reboot/scripts/elogs.py"
+  },
+  {
+    "Name": "yahoo",
+    "Command": "ping -c 3 yahoo.com"
+  },
+  {
+    "Name": "bing",
+    "Command": "ping -c 3 bing.com"
+  },
+  {
+    "Name": "aol",
+    "Command": "ping -c 3 aol.com"
+  }
+]
