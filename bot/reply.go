@@ -22,6 +22,8 @@ func defaultMessageFilter(message string, sender *User) (string, slack.PostMessa
 	return message, params
 }
 
+
+// run creates this and uses it to send messages back
 func responseHandler(target string, message string, sender *User) {
 	message, params := messageFilter(message, sender)
 	api.PostMessage(target, message, params)

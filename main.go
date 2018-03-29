@@ -8,6 +8,7 @@ import (
 	"github.com/jburandt/gobot/commands/debug"
 	"github.com/jburandt/gobot/commands/argcheck"
 	"github.com/jburandt/gobot/commands/jenkins"
+	"github.com/jburandt/gobot/commands/copy"
 )
 
 func setup() {
@@ -34,6 +35,11 @@ func setup() {
 		"hits jenkins api to show jobs",
 		"",
 		jenkins.Jenkins)
+	bot.AddCommand(
+		"copy",
+		"hits jenkins api to show jobs",
+		"",
+		copy.Copy)
 
 }
 
